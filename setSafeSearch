@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Google
+pihole -a setdns forcesafesearch.google.com 216.239.38.120 google.com google.co.uk google.de
+
+# YouTube
+pihole -a setdns restrictmoderate.youtube.com 216.239.38.119 www.youtube.com m.youtube.com youtubeei.google.com youtube.googleapis.com www.youtube-nocookie.com
+# OR
+pihole -a setdns restrict.youtube.com 216.239.38.120 www.youtube.com m.youtube.com youtubeei.google.com youtube.googleapis.com www.youtube-nocookie.com
+
+# Bing
+pihole -a setdns strict.bing.com 204.79.197.220 bing.com
+
+# DuckDuckGo
+pihole -a setdns safe.duckduckgo.com 52.142.126.100 duckduckgo.com duck.com start.duckduckgo.com
